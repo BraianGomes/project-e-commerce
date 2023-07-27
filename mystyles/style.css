@@ -35,7 +35,7 @@ header{
     padding: 30px 8%;
 }
 
-#logo{
+h1{
     display: flex;
     align-items: center;
     color: var(--textcolor);
@@ -45,20 +45,11 @@ header{
 
 #logo i{
     color: var(--maincolor);
-    font-size: 32px;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 #navigation{
     display: flex;
-}
-
-#navigation a{
-    color:var(--secundarycolor);
-    font-size: var(--pfont-size);
-    font-weight: 500;
-    margin: 0px 30px;
-    transition: a .55s ease;
 }
 
 #navigation a:hover{
