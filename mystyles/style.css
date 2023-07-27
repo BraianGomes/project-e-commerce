@@ -44,6 +44,7 @@ h1{
 }
 
 #logo i{
+    font-size: 2em;
     color: var(--maincolor);
     margin: 0px;
 }
