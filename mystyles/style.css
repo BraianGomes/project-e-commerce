@@ -45,15 +45,48 @@ h1{
 
 #logo i{
     color: var(--maincolor);
-    margin: 5px;
+    margin: 0px;
 }
 
 #navigation{
     display: flex;
 }
 
+#navigation a{
+    color: var(--secundarycolor);
+    font-size: var(--pfont-size);
+    font-weight: light;
+    margin: 0px 30px;
+    transition: a .55s ease;
+}
+
 #navigation a:hover{
     color: var(--maincolor);
-} 
+}
+
+#cart{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    font-size: 3em;
+    color: var(--textcolor);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+#cart i{
+    margin-right: 25px;
+    font-size: 3em;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+nav > div i:hover{
+    transform: translateY(-5px);
+    background-color: var(--maincolor);
+    transition: all .5s ease;
+}
 
 
