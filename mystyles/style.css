@@ -13,9 +13,19 @@
 
 :root{
     --backgroundcolor:#101113;
-    --textcolor:white;
+    --textcolor:#fff;
     --maincolor:#34e7f8;
     --secundarycolor:#fcfcfc;
     --h1font-size:3em;
     --pfont-size:1em;
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+}
+
+header{
+    position: fixed;
+    
 }
