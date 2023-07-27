@@ -14,7 +14,7 @@
     --textcolor:#fff;
     --maincolor:#34e7f8;
     --secundarycolor:#fcfcfc;
-    --h1font-size:4em;
+    --hfont-size:4em;
     --pfont-size:1em;
 }
 
@@ -39,12 +39,11 @@ h1{
     display: flex;
     align-items: center;
     color: var(--textcolor);
-    font-size: 3em;
+    font-size:var(--hfont-size);
     font-weight: bold;
 }
 
 #logo i{
-    font-size: 2em;
     color: var(--maincolor);
     margin: 0px;
 }
@@ -91,7 +90,34 @@ nav > div i:hover{
 }
 
 #home{
-    
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2em;
+}
+
+#home-text h2{
+    font-size: var(--hfont-size);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+#home-text p{
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 5em;
+}
+
+#home-text h3{
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
 }
 
 
