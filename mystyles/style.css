@@ -147,6 +147,61 @@ nav > div i:hover{
     position: absolute;
     top: 50%;
     left: 3%;
-    transform: translateY(-50%);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    transform: translateY(-50%);
+}
+
+#main > li > img{
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+
+#blue{
+    background-color: var(--maincolor);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all .55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+#blue:hover{
+    transform: translateY(-1em);
+}
+
+#black{
+    background-color: rgb(240, 240, 6);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all .55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+#black:hover{
+    transform: translateY(-1em);
+}
+
+#white{
+    background-color: rgb(206, 27, 111);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all .55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+#white:hover{
+    transform: translateY(-1em);
 }
