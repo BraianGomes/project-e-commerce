@@ -107,7 +107,7 @@ nav > div i:hover{
 }
 
 #home-text p{
-    color: whitesmoke;
+    color: var(--maincolor);
     font-size: 1.5em;
     font-weight: 400;
     margin-bottom: 5em;
@@ -120,4 +120,33 @@ nav > div i:hover{
     margin-bottom: 1em;
 }
 
+#home-img img{
+    max-width: 100%;
+    width: 30em;
+    height: auto;
+    margin-left: 25%;
+}
 
+#buttom{
+    display: inline-block;
+    color:var(--textcolor);
+    padding: 15px 70px;
+    font-size: 1,5em;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid var(--textcolor);
+    transition: all .55 ease;
+}
+
+#buttom:hover{
+    background-color: var(--textcolor);
+    color: var(--backgroundcolor);
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+}
