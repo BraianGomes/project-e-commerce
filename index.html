@@ -59,10 +59,24 @@
     </section>
 
     <ul id="main">
-        <li id="blue"><img src="images/headblue.png" alt="HeadPhone blue reference" onclick="slider('headbluelarge')"></li>
-        <li id="black"><img src="images/headblack.png" alt="HeadPhone white reference" onclick="slider('headblacklarge')"></li>
-        <li id="white"><img src="images/headwhite.png" alt="HeadPhone white reference" onclick="slider('headwhitelarge')"></li>
+        <li id="blue"><img src="images/headblue.png" alt="HeadPhone blue reference" onclick="slider('images/headblue.png')"></li>
+        <li id="black"><img src="images/headblacklarge.png" alt="HeadPhone black reference" onclick="slider('images/headblue.png')"></li>
+        <li id="white"><img src="images/headwhite.png" alt="HeadPhone white reference" onclick="slider('headwhitelarge.png')"></li>
     </ul>
+
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
     
 </body>
 </html>
