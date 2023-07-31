@@ -117,7 +117,7 @@ header{
     margin-bottom: 2px;
 }
 
-.home-text h5{
+.home-text p{
     color: #ffffff99;
     font-size: 14px;
     font-weight: 400;
@@ -140,7 +140,7 @@ header{
 }
 
 
-.btn{
+.buttom{
     display: inline-block;
     padding: 15px 70px;
     font-size: 16px;
@@ -151,7 +151,7 @@ header{
     color: #fff;
 }
 
-.btn:hover{
+.buttom:hover{
     background: var(--tex-color);
     border: 2px solid var(--tex-color);
     color: #000;
