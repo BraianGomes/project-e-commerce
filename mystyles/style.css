@@ -33,66 +33,39 @@ header{
     width: 100%;
     top: 0px;
     right: 0px;
-    z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 30px 8%;
 }
 
 h1{
     display: flex;
+    margin: auto;
     align-items: center;
     color: var(--textcolor);
-    font-size:var(--hfont-size);
+    font-size:3.5em;
     font-weight: bold;
 }
 
 #logo i{
     color: var(--maincolor);
-    margin: 0px;
+    margin: auto;
 }
 
-#navigation{
+nav > ul > li > a{
     display: flex;
-}
-
-#navigation a{
-    color: var(--secundarycolor);
-    font-size: var(--pfont-size);
-    font-weight: light;
-    margin: 0px 30px;
-    transition: a .55s ease;
-}
-
-#navigation a:hover{
-    color: var(--maincolor);
-}
-
-#cart{
-    display: flex;
-    align-items: center;
-}
-
-#menu{
-    font-size: 3em;
-    color: var(--textcolor);
-    z-index: 10001;
-    cursor: pointer;
-}
-
-#cart i{
-    margin-right: 25px;
-    font-size: 3em;
-    cursor: pointer;
-    transition: all .5s ease;
-}
-
-nav > div i:hover{
-    transform: translateY(-5px);
-    background-color: var(--maincolor);
-    transition: all .5s ease;
-}
+        color:var(--textcolor);
+        padding: 15px 70px;
+        font-size: 1em;
+        font-weight: 500;
+        background: transparent;
+        border: 2px solid var(--textcolor);
+    }
+    
+    nav > ul > li > a :hover{
+        background-color: var(--textcolor);
+        color: #34e7f8;
+    }
 
 #home{
     position: relative;
@@ -105,7 +78,7 @@ nav > div i:hover{
 }
 
 #home-text h2{
-    font-size: var(--hfont-size);
+    font-size: 2em;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 2px;
@@ -119,7 +92,7 @@ nav > div i:hover{
 }
 
 #home-text h3{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 1em;
@@ -136,11 +109,10 @@ nav > div i:hover{
     display: inline-block;
     color:var(--textcolor);
     padding: 15px 70px;
-    font-size: 1,5em;
+    font-size: 1em;
     font-weight: 500;
     background: transparent;
     border: 2px solid var(--textcolor);
-    transition: all .55 ease;
 }
 
 #buttom:hover{
