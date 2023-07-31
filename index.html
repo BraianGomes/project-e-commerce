@@ -2,68 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Head Phones</title>
-
-    <link rel="stylesheet" href="mystyles/style.css" media="all">
-    <link rel="stylesheet" href="mystyles/mediaquery.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Headphones</title>
 </head>
 <body>
 
     <header>
-        
-        <h1 id="logo"><i class='bx bx-headphone'></i>SOUNDBOX</h1>
-        
-<nav>
-            <ul id="navigation">
-                <li><a href="#">General View</a></li>
-                <li><a href="#">Teach Spec</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
 
-            <div id="cart">
-                <i class='bx bx-cart'></i>
-            </div>
+        <ul id="navigation">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul><!--navegação-->
 
-            <div id="menu">
-                <i class='bx bx-menu'></i>
-            </div>
-        
-</nav>
-        
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
     </header>
 
-    <section id="home">
-        <div id="home-img">
-            <img src="images/headbluelarge.png"    alt="Blue HeadPhones">
-        </div>
+    <section class="home">
+        <div class="home-img">
+            <img src="images/headbluelarge.png" class="one">
+        </div><!--home-img-->
 
-        <div id="home-text">
-            <h2>Wireless <br> HeadPhones</h2>
-            <p>The Smarter way to listen</p>
-            <h3>$129.00</h3>
-            <a href="#" id="buttom">Shop Now</a>
-        </div>
+        <div class="home-text">
 
-    </section>
+            <h1>Wireless <br> Headphones</h1>
+            <h5>The Smarter way to listen</h5>
+            <h3>$139.00</h3>
+            <a href="#" class="btn">Shop Now</a>
 
-    <ul id="main">
-        <li id="blue"><img src="images/headblue.png" alt="HeadPhone blue reference" onclick="slider('images/headblue.png')"></li>
-        <li id="black"><img src="images/headblacklarge.png" alt="HeadPhone black reference" onclick="slider('images/headblue.png')"></li>
-        <li id="white"><img src="images/headwhite.png" alt="HeadPhone white reference" onclick="slider('headwhitelarge.png')"></li>
-    </ul>
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="images/headblue.png" onclick="slider('headblue.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="images/headblack.png" onclick="slider('headblack.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="images/headwhite.png" onclick="slider('headwhite.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
 
     <script>
         function slider (anything){
@@ -78,6 +77,6 @@
         navbar.classList.toggle ('open');
        }
     </script>
-    
+
 </body>
 </html>
