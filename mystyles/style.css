@@ -9,6 +9,11 @@
     list-style: none;
 }
 
+body,htm{
+    width: 100vw;
+    height: 100vh;
+}
+
 :root{
     --backgroundcolor:#101113;
     --textcolor:#fff;
