@@ -52,15 +52,13 @@ h1{
     margin: auto;
 }
 
-a{
-    display: flex;
-        color:var(--textcolor);
-        padding: 15px 70px;
-        font-size: 1em;
-        font-weight: 500;
-        background: transparent;
-        border: 2px solid var(--textcolor);
-    }
+#main > li > a:hover{
+    background-color: #34e7f8;
+}
+
+#cart,#menu{
+    font-size: 2em;
+}
 
 #home{
     position: relative;
