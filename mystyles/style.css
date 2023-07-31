@@ -52,7 +52,7 @@ h1{
     margin: auto;
 }
 
-nav > ul > li > a{
+a{
     display: flex;
         color:var(--textcolor);
         padding: 15px 70px;
@@ -60,11 +60,6 @@ nav > ul > li > a{
         font-weight: 500;
         background: transparent;
         border: 2px solid var(--textcolor);
-    }
-    
-    nav > ul > li > a :hover{
-        background-color: var(--textcolor);
-        color: #34e7f8;
     }
 
 #home{
