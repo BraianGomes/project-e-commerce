@@ -35,16 +35,16 @@
             <h1>Soundbox</h1>
         </div>
 
-        <menu>
             <i id="cart" class='bx bx-cart'></i>
-            <i id="menu" class='bx bx-menu'></i>
-            
-        <ul id="navigation">
+            <i id="burguer" class='bx bx-menu' onclick="click()"></i>
+         
+        <menu id="itens">
+        <ul>
             <li><a href="#">General View</a></li>
             <li><a href="#">Teach Specs</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Contact Us</a></li>
-        </ul><!--navegação-->
+        </ul>
 
         </menu>
     </header>
@@ -80,17 +80,10 @@
     </div><!--main-->
 
     <script>
-        function slider (anything){
-            document.querySelector ('.one') .src = anything;
-        };
+        function clickMenu(){
+          navigation.style.display = 'block';
 
-       let menu = document.querySelector ('#menu-icon');
-       let navbar = document.querySelector ('.navbar');
-
-       menu.onclick = () => {
-        menu.classList.toggle ('bx-x');
-        navbar.classList.toggle ('open');
-       }
+        }
     </script>
 
 </body>

@@ -30,7 +30,7 @@ div#solo{
     align-items: center;
 }
 
-heaher > h1{
+header > div > h1{
     color: var(--tex-color);
     font-size: 3em;
     font-weight: bold;
@@ -38,17 +38,25 @@ heaher > h1{
 
 i#logo{
     color: var(--main-color);
-    font-size: 50px;
+    font-size: 70px;
 }
 
-i#menu{
+i#burguer{
+    display: block;
+    padding: 10px;
+    text-align: center;
     font-size: 35px;
     color: var(--tex-color);
     cursor: pointer;
 }
 
+i#burguer:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+
 menu > ul > li > a{
-    display: block;
+    display: none;
     padding: 10px;
     text-decoration: none;
     text-align: center;
@@ -67,18 +75,6 @@ menu > ul > li >a:hover{
     align-items: center;
 }
 
-
-/*.header-icons i{
-    margin-right: 25px;
-    font-size: 28px;
-    cursor: pointer;
-    transition: all .5s ease;
-}
-
-.header-icons i:hover{
-    transform: translateY(-5px);
-    color: var(--main-color);
-}*/
 
 .section{
     padding: 0 15%;
