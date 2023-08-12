@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    list-style: none;
+    list-style-type: none;
 }
 
 :root{
@@ -23,47 +23,43 @@ body{
     color: var(--tex-color);
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+div#solo{
     display: flex;
+    text-align: center;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 8%;
 }
 
-#logo{
-    display: flex;
-    align-items: center;
+heaher > h1{
     color: var(--tex-color);
-    font-size: 28px;
+    font-size: 3em;
     font-weight: bold;
 }
 
-#logo i{
+i#logo{
     color: var(--main-color);
-    font-size: 32px;
-    margin-right: 5px;
+    font-size: 50px;
 }
 
-#navigation{
-    display: flex;
+i#menu{
+    font-size: 35px;
+    color: var(--tex-color);
+    cursor: pointer;
 }
 
-#navigation a{
-    color: var(--other-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    margin: 0 30px;
-    transition: a .55s ease;
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    border-top: 2px solid var(--tex-color);
 }
 
-#navigation a:hover{
+menu > ul > li >a:hover{
+    background-color: var(--tex-color);
     color: var(--main-color);
-
 }
 
 .header-icons{
@@ -71,14 +67,8 @@ header{
     align-items: center;
 }
 
-#menu{
-    font-size: 35px;
-    color: var(--tex-color);
-    z-index: 10001;
-    cursor: pointer;
-}
 
-.header-icons i{
+/*.header-icons i{
     margin-right: 25px;
     font-size: 28px;
     cursor: pointer;
@@ -88,10 +78,9 @@ header{
 .header-icons i:hover{
     transform: translateY(-5px);
     color: var(--main-color);
-}
+}*/
 
 .section{
-
     padding: 0 15%;
 }
 .home{
