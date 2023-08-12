@@ -35,18 +35,22 @@
             <h1>Soundbox</h1>
         </div>
 
-            <i id="cart" class='bx bx-cart'></i>
-            <i id="burguer" class='bx bx-menu' onclick="clickMenu()"></i>
-         
-        <menu id="itens">
-        <ul>
-            <li><a href="#">General View</a></li>
-            <li><a href="#">Teach Specs</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+        <i id="cart" class='bx bx-cart'></i>
 
-        </menu>
+        <div id="burguer">
+            <i class='bx bx-menu' onclick="clickMenu()"></i>
+        </div>
+
+    <menu id="itens">
+        <nav>
+            <ul>
+                <li><a href="#">General View</a></li>
+                <li><a href="#">Teach Specs</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </menu>
     </header>
 
     <section class="home">
@@ -62,7 +66,7 @@
             <a href="#" class="buttom">Shop Now</a>
 
         </div><!--home-text-->
-    </section><!--home-->
+    </section>
 
 
     <div class="main">
@@ -81,10 +85,10 @@
 
     <script>
         function clickMenu() {
-            if (itens.style.display =='none'){
-                itens.style.display = 'block'
-            } else {
+            if (itens.style.display =='block'){
                 itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
             }
         }
     </script>

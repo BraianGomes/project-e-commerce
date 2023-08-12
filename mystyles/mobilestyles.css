@@ -25,9 +25,8 @@ body{
 
 div#solo{
     display: flex;
-    text-align: center;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 
 header > div > h1{
@@ -38,6 +37,7 @@ header > div > h1{
 
 i#logo{
     color: var(--main-color);
+    margin-top: 10px;
     font-size: 70px;
 }
 
@@ -51,30 +51,44 @@ i#burguer{
 }
 
 i#burguer:hover{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
     color: white;
     background-color: var(--main-color);
+    border-radius: 5px;
 }
 
-menu > ul > li > a{
+#cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu > nav > ul > li > a{
     display: block;
+    width: 30vw;
     padding: 10px;
     text-decoration: none;
     text-align: center;
     background-color: var(--main-color);
     color: white;
     border-top: 2px solid var(--tex-color);
+    border-radius: 5px;
 }
 
-menu > ul > li >a:hover{
+menu > nav > ul > li >a:hover{
     background-color: var(--tex-color);
     color: var(--main-color);
+    border-radius: 5px;
 }
 
-.header-icons{
+nav{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-
 
 .section{
     padding: 0 15%;
