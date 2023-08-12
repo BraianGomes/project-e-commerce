@@ -51,18 +51,21 @@ i#burguer{
 }
 
 i#burguer:hover{
-    display: flex;
-    justify-content: center;
-    text-align: center;
     width: 30vw;
     color: white;
     background-color: var(--main-color);
     border-radius: 5px;
 }
 
-#cart{
+#fix{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+#cart{
+    display: flex;
+    justify-content: end;
     align-items: center;
 }
 
