@@ -42,9 +42,10 @@ i#logo{
 }
 
 i#cart{
-    display: block;
+    width: 15vw;
     padding: 10px;
     font-size: 3em;
+    margin-left: 385px;
     cursor: pointer;
 }
 
