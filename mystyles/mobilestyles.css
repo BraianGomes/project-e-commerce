@@ -171,7 +171,7 @@ div.main > ul > li > img{
     transform: translateY(-8px);
 }
 
-section >div.home{
+section > div.home{
     display: flex;
     flex-direction: column;
     justify-content: center;
