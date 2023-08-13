@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -10,22 +10,22 @@
 }
 
 :root{
-    --bg-color:var(--bg-color) #1d2631;
+    --bg-color:#1d2631;
     --tex-color: #fff;
     --main-color: #34e7f8;
-    --other-color: #fcfcfc;
-    --h1-font: 4rem;
-    --p-font: 1rem;
+    --p-color: #ffffff99;
 }
 
 body{
-    background-color:#1d2631 ;
+    background-color:var(--bg-color);
     color: var(--tex-color);
 }
 
 .logo{
     display: flex;
+    flex-direction: row;
     align-items: center;
+    align-content: center;
     justify-content: space-around;
 }
 
@@ -76,14 +76,22 @@ i#burguer:hover{
     border-radius: 5px;
 }
 
-menu > nav > ul > li > a{
+#itens > nav > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+menu#itens > nav > ul > li > a{
     display: block;
     width: 30vw;
+    height: 40px;
     padding: 10px;
     text-decoration: none;
-    text-align: center;
     background-color: var(--main-color);
-    color: white;
+    color: var(--tex-color);
     border-top: 2px solid var(--tex-color);
     border-radius: 5px;
 }
@@ -94,114 +102,114 @@ menu > nav > ul > li >a:hover{
     border-radius: 5px;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#home{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-}
-
-section > div > p{
-    color: #ffffff99;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 60px;
-}
-
-section > div > h3{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 35px;
-}
-
-#buttom{
-    display: inline-block;
-    padding: 15px 70px;
-    font-size: 16px;
-    font-weight: 500;
-    background: transparent;
-    border: solid 2px var(--tex-color);
-    transition: all.55 ease;
-    color: #fff;
-}
-
-#buttom:hover{
-    background: var(--tex-color);
-    border: 2px solid var(--tex-color);
-    color: #000;
-}
-
-.main{
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    transform: translateY(-50%);
+div.main > ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    transform: translateY(-50%);
+    gap: 3rem;
 }
 
-.main li img{
+div.main > ul > li > img{
     width: 50px;
     height: auto;
     max-width: 100%;
 }
 
-.row{
+#row1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: var(--main-color);
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    justify-content: center;
     transition: all.55s ease;
     cursor: pointer;
-    display: inline-flex;
 }
 
-.row:hover {
+#row1:hover {
     transform: translateY(-8px);
 }
 
-.row2{
+#row2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: #ff758d;
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     transition: all.55s ease;
     cursor: pointer;
 }
 
-.row2:hover{
+#row2:hover{
     transform: translateY(-8px);
 }
 
-.row3{
+#row3{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: #ffd06d;
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     transition: all.55s ease;
     cursor: pointer;
 }
 
-.row3:hover{
+#row3:hover{
     transform: translateY(-8px);
+}
+
+section >div.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+section > div.home > h2{
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+section > div.home > p{
+    color: #ffffff99;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+section > div.home > h3{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+section > div.home > a{
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    border: solid 2px var(--tex-color);
+    color: var(--tex-color);
+}
+
+section > div.home > a:hover{
+    background: var(--tex-color);
+    color: var(--bg-color);
 }
