@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    i#burguer{
+        display: none;
+    }
+
+   menu{
+        display: block;
+    }
+
+    menu#itens > nav > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    menu#itens > nav > ul > li > a{
+        width: 150px;
+    }
+
+    main{
+        width: 768px;
+    }
+
+}

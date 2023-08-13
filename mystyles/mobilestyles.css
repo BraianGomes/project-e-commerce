@@ -66,22 +66,21 @@ i#burguer{
     text-align: center;
     font-size: 35px;
     color: var(--tex-color);
+    background-color: var(--main-color);
     cursor: pointer;
 }
 
-i#burguer:hover{
-    width: 30vw;
-    color: white;
-    background-color: var(--main-color);
-    border-radius: 5px;
+menu{
+    display: none;
 }
 
-#itens > nav > ul{
+menu#itens > nav > ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 menu#itens > nav > ul > li > a{
@@ -89,6 +88,7 @@ menu#itens > nav > ul > li > a{
     width: 30vw;
     height: 40px;
     padding: 10px;
+    margin-top: 10px;
     text-decoration: none;
     background-color: var(--main-color);
     color: var(--tex-color);
