@@ -41,6 +41,13 @@ i#logo{
     font-size: 70px;
 }
 
+i#cart{
+    display: block;
+    padding: 10px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
 i#burguer{
     display: block;
     padding: 10px;
@@ -60,12 +67,6 @@ i#burguer:hover{
 #fix{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-#cart{
-    display: flex;
-    justify-content: end;
     align-items: center;
 }
 
