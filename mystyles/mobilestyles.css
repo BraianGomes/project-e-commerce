@@ -21,7 +21,12 @@ body{
     color: var(--tex-color);
 }
 
-.logo{
+header{
+    width: 400px;
+    margin: auto;
+}
+
+header > div.logo{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,15 +82,16 @@ menu{
 menu#itens > nav > ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     gap: 5px;
+    max-width: 768px;
 }
 
 menu#itens > nav > ul > li > a{
     display: block;
-    width: 30vw;
+    width: 150px;
     height: 40px;
     padding: 10px;
     margin-top: 10px;

@@ -1,12 +1,35 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px){
+
+    header,menu,section{
+        width: 768px;
+        margin: auto;
+    }
+
+    div.main > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 100px;
+    }
+
     i#burguer{
         display: none;
     }
 
    menu{
         display: block;
+    }
+
+    i#logo{
+        font-size: 6em;
+    }
+
+    header > div > h1{
+        font-size: 4em;
     }
 
     menu#itens > nav > ul{
@@ -17,12 +40,4 @@
         text-align: center;
     }
 
-    menu#itens > nav > ul > li > a{
-        width: 150px;
     }
-
-    main{
-        width: 768px;
-    }
-
-}
