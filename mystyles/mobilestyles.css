@@ -219,3 +219,17 @@ section > div.home > a:hover{
     color: var(--bg-color);
 }
 
+div#wire > p {
+    display:none;
+ }
+
+ div:hover > p{
+    display: block;
+    color: white;
+    background-color:red ;
+    width: 300px;
+}
+
+ div:hover{
+    color:red;
+}
