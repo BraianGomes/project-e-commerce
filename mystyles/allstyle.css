@@ -40,4 +40,22 @@
         text-align: center;
     }
 
+    section > div.home{
+        margin-top: 40px;
+    }
+
+    section > div.home > h2{
+        font-size: 3.5em;
+        margin-left: 120px;
+    }
+
+    section > div.home > p{
+        font-size: 2em;
+        margin-left: 100px;
+    }
+
+    section > div.home > h3{
+        font-size: 4em;
+    }
+
     }
