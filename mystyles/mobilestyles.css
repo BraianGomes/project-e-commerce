@@ -219,17 +219,32 @@ section > div.home > a:hover{
     color: var(--bg-color);
 }
 
-div#wire > p {
+
+
+
+
+
+div > ul > p#wire {
     display:none;
  }
 
- div:hover > p{
+ div > ul:hover > p#wire{
     display: block;
     color: white;
-    background-color:red ;
-    width: 300px;
+    background-color:var(--main-color) ;
+    width: 100px;
 }
 
- div:hover{
-    color:red;
+p#wire{
+display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: all.55s ease;
+    cursor: pointer;
 }
