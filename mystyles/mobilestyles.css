@@ -75,11 +75,11 @@ i#burguer{
     cursor: pointer;
 }
 
-menu{
+menu#itens{
     display: none;
 }
 
-menu#itens > nav > ul{
+div#container > nav > ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,22 +89,36 @@ menu#itens > nav > ul{
     max-width: 768px;
 }
 
-menu#itens > nav > ul > li > a{
-    display: block;
+div#container > nav > ul > li >a{
+    display: flex;
+    justify-content: center;
+    position: relative;
     width: 150px;
     height: 40px;
     padding: 10px;
     margin-top: 10px;
+    overflow: hidden;
     text-decoration: none;
     background-color: var(--main-color);
     color: var(--tex-color);
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
-menu > nav > ul > li >a:hover{
+div#container > nav > ul > li >a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+div#container > nav > ul > li >a:hover::before{
     background-color: var(--tex-color);
     color: var(--main-color);
-    border-radius: 5px;
+    height: 375%;
+    transition: all .5s;
 }
 
 div.main > ul{
