@@ -145,7 +145,7 @@ div.main > ul > div#micros > li > img{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    transition: all.55s ease;
+    transition: all 0.7s ease;
     cursor: pointer;
 }
 
@@ -162,7 +162,7 @@ div.main > ul > div#micros > li > img{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    transition: all.55s ease;
+    transition: all 0.7s ease;
     cursor: pointer;
 }
 
@@ -179,7 +179,7 @@ div.main > ul > div#micros > li > img{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    transition: all.55s ease;
+    transition: all 0.7s ease;
     cursor: pointer;
 }
 
@@ -239,23 +239,40 @@ div#heads > p{
     display:none;
  }
 
- div > ul:hover > p#wire{
+div#heads:hover > p{
     display: block;
     color: white;
     background-color:var(--main-color) ;
-    width: 100px;
+    width: 120px;
 }
 
-p#wire{
-display:flex;
-    justify-content: center;
-    align-items: center;
+p#blue{
+    position: absolute;
     text-align: center;
     height: 70px;
-    width: 70px;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    transition: all.55s ease;
-    cursor: pointer;
+    width: 70px; 
+    bottom: 330px;
+    border-radius: 20%;
+}
+
+div#buds > p{
+    display:none;
+ }
+
+ div#buds:hover > p{
+    display: block;
+    color: white;
+    background-color:#ff758d ;
+    width: 120px;
+}
+
+div#micros > p{
+    display:none;
+ }
+
+ div#micros:hover > p{
+    display: block;
+    color: white;
+    background-color:#ffd06d ;
+    width: 120px;
 }
