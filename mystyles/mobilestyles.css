@@ -324,6 +324,11 @@ p#yellow{
 
 .tank{
     display: flex;
+margin: auto;
+background-color: transparent;
+position: absolute;
+
+
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
 }
