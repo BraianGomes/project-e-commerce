@@ -20,7 +20,7 @@
         display: none;
     }
 
-   menu{
+   menu#itens{
         display: block;
     }
 
@@ -32,7 +32,7 @@
         font-size: 4em;
     }
 
-    div#container > nav > ul{
+    div#container{
         display: flex;
         flex-direction: row;
         justify-content: space-around;

@@ -79,7 +79,7 @@ menu#itens{
     display: none;
 }
 
-div#container > nav > ul{
+div#container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,7 +89,7 @@ div#container > nav > ul{
     max-width: 768px;
 }
 
-div#container > nav > ul > li >a{
+.button{
     display: flex;
     justify-content: center;
     position: relative;
@@ -99,26 +99,31 @@ div#container > nav > ul > li >a{
     margin-top: 10px;
     overflow: hidden;
     text-decoration: none;
-    background-color: var(--main-color);
     color: var(--tex-color);
     border-radius: 20px;
+    cursor: pointer;
 }
 
-div#container > nav > ul > li >a::before{
+.button::before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 0%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    height: 100%;
+    z-index: -1;
+    transition: all .3s;
+    background-color: var(--main-color);
 }
 
-div#container > nav > ul > li >a:hover::before{
-    background-color: var(--tex-color);
-    color: var(--main-color);
-    height: 375%;
-    transition: all .5s;
+.link::before{
+    width: 0px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.link:hover::before{
+    width: 100%;
 }
 
 div.main > ul{
