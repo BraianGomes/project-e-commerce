@@ -70,9 +70,15 @@ i#burguer{
     padding: 5px;
     text-align: center;
     font-size: 35px;
+    width: 100px;
     color: var(--tex-color);
-    background-color: var(--main-color);
+    border: 2px solid rgba(255, 255, 255, 0.795);
+    border-radius: 2px;
     cursor: pointer;
+}
+
+i#burguer:hover{
+    background-color: var(--main-color);
 }
 
 menu#itens{
@@ -249,11 +255,6 @@ section > div.home > a:hover{
     color: var(--bg-color);
 }
 
-
-
-
-
-
 div#heads > p{
     display:none;
  }
@@ -261,7 +262,7 @@ div#heads > p{
 div#heads:hover > p{
     display: block;
     color: white;
-    background-color:var(--main-color) ;
+    background-color:#34e8f87b;
     width: 120px;
 }
 
@@ -271,7 +272,7 @@ p#blue{
     height: 70px;
     width: 70px; 
     bottom: 330px;
-    border-radius: 20%;
+    border-radius: 15px;
 }
 
 div#buds > p{
@@ -281,8 +282,17 @@ div#buds > p{
  div#buds:hover > p{
     display: block;
     color: white;
-    background-color:#ff758d ;
+    background-color:#ff758c87 ;
     width: 120px;
+}
+
+p#pink{
+    position: absolute;
+    text-align: center;
+    height: 70px;
+    width: 70px; 
+    bottom: 210px;
+    border-radius: 15px;
 }
 
 div#micros > p{
@@ -292,6 +302,15 @@ div#micros > p{
  div#micros:hover > p{
     display: block;
     color: white;
-    background-color:#ffd06d ;
+    background-color:#ffd16d84 ;
     width: 120px;
+}
+
+p#yellow{
+    position: absolute;
+    text-align: center;
+    height: 70px;
+    width: 70px; 
+    bottom: 90px;
+    border-radius: 15px;
 }
