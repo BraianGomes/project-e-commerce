@@ -314,3 +314,22 @@ p#yellow{
     bottom: 90px;
     border-radius: 15px;
 }
+
+.carrosel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.tank{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+div.tank > img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}

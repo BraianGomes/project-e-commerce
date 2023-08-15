@@ -5,25 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-
-
     <link rel="stylesheet" href="mystyles/mobilestyles.css" media="all">
     <link rel="stylesheet" href="mystyles/allstyle.css">
-    <link rel="shortcut icon" href="xxxxxxxxxxxxxxxxxxxxxxx" type="image/x-icon">
+
+    <script src="script.js"></script>
 
     <title>E-Commerce Headphones</title>
 </head>
@@ -66,7 +61,7 @@
         </div>
 
         <div id="buds">
-            <li id="row2"><img src="images/"></li>
+            <li id="row2"><img src="images/headblack.png"></li>
             <p id="pink">EarBubs</p>
         </div>
 
@@ -75,6 +70,14 @@
             <p id="yellow">MicroPhones</p>
         </div>
         </ul>
+    </div>
+
+    <div class="carrosel">
+        <div class="tank" id="img">
+            <img src="images/headbluelarge.png" alt="HeadPhone Blue">
+            <img src="images/headblacklarge.png" alt="HeadPhone Black">
+            <img src="images/headwhitelarge.png" alt="HeadPhone White">
+        </div>
     </div>
 
     <section>
@@ -86,7 +89,7 @@
         </div>
     </section>
 
-    <script>
+<script>
         function changeSize() {
             if (window.innerWidth >= 768) {
             itens.style.display = 'block'
@@ -101,7 +104,25 @@
                 itens.style.display = 'block'
             }
         }
-    </script>
+
+const images = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function carrosel(){
+    idx++;
+
+if(idx > img.length - 1){
+    idx = 0;
+}
+
+images.style.transform = `translateX(${-idx * 300}px)`;
+}
+
+setInterval(carrosel,1800);
+
+</script>
 
 </body>
 </html>
