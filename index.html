@@ -73,11 +73,9 @@
     </div>
 
     <div class="carrosel">
-        <div class="tank" id="img">
-            <img src="images/headbluelarge.png" alt="HeadPhone Blue">
-            <img src="images/headblacklarge.png" alt="HeadPhone Black">
-            <img src="images/headwhitelarge.png" alt="HeadPhone White">
-        </div>
+            <img id="bluelarge" src="images/headbluelarge.png" alt="HeadPhone Blue">
+            <img id="blacklarge" src="images/headblacklarge.png" alt="HeadPhone Black">
+            <img id="whitelarge" src="images/headwhitelarge.png" alt="HeadPhone White">
     </div>
 
     <section>
@@ -105,22 +103,15 @@
             }
         }
 
-const images = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+    window.onload = function(){
+    var fullblue = document.getElementById('bluelarge');
+    var fatorLupa = 1;
+    
+    fullblue.onmouseover = function () {this.style.width = (this.clientWidth * 2) + "px";};
 
-let idx = 0;
+    fullblue.onmouseout = function () {this.style.width = (this.clientWidth / 2) + "px";};}
+///////////////////////////////////////////////////////////
 
-function carrosel(){
-    idx++;
-
-if(idx > img.length - 1){
-    idx = 0;
-}
-
-images.style.transform = `translateX(${-idx * 270}px)`;
-}
-
-setInterval(carrosel,1800);
 
 </script>
 
