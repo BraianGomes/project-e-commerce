@@ -314,3 +314,24 @@ p#yellow{
     bottom: 90px;
     border-radius: 15px;
 }
+
+
+/*
+window.onload = function(){
+  var entidade = document.getElementById('imagem');
+
+  // Altere o número para a apliação/redução desejada
+  var fator_lupa = 6;
+
+  entidade.onmouseover = function () { this.style.width = (this.clientWidth * fator_lupa) + "px"; };
+
+  entidade.onmouseout = function () { this.style.width = (this.clientWidth / 2) + "px"; };
+}
+
+A variável fator_lupa aumenta e diminui a imagem em pixels.
+
+Para chamar a função basta atribuir um id a imagem desejada, dessa forma:
+
+<img id="imagem" src="imagem.png" align="center" />
+OBS: esse exemplo usa onmouseover, para adaptar ao seu caso, basta usar o OnClick.     
+*/

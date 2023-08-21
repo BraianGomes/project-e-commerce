@@ -60,15 +60,6 @@
             <p id="blue">Wirelles HeadPhones</p>
         </div>
 
-
-
-
-        <img id="blueLarge" src="images/headbluelarge.png" alt="Blue Large HeadPhone" width="100" height="100" style="position: relative; left: 10px;">
-
-
-
-
-
         <div id="buds">
             <li id="row2"><img src="images/headblack.png"></li>
             <p id="pink">EarBubs</p>
@@ -107,43 +98,6 @@
         }
 
 
-window.onload = function(){
-  var entidade = document.getElementById('imagem');
-
-  // Altere o número para a apliação/redução desejada
-  var fator_lupa = 6;
-
-  entidade.onmouseover = function () { this.style.width = (this.clientWidth * fator_lupa) + "px"; };
-
-  entidade.onmouseout = function () { this.style.width = (this.clientWidth / 2) + "px"; };
-}
-
-A variável fator_lupa aumenta e diminui a imagem em pixels.
-
-Para chamar a função basta atribuir um id a imagem desejada, dessa forma:
-
-<img id="imagem" src="imagem.png" align="center" />
-
-
-
-$(document).ready(function(){
-
-$('#blueLarge').on( "click", function() {
-    $(this).animate({
-    width:'70%',
-    height:'70%'
-    },1000);
-    });
-
-$('#blueLarge').mouseout(function() {
-    $(this).animate({
-    width:'50%',
-    height:'50%'
-    },1000);
-    });
-
-});
-*/
 
 </script>
 
