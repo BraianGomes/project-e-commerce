@@ -1,5 +1,9 @@
-function loading(){
-    document.getElementById("row1").innerHTML = "<img scr='images/headbluelarge.png' width='250'>";
+function mouseOver(){
+    document.getElementById("mouseAlt").innerHTML = "Retire o mouse";
+}
+
+function mouseOut(){
+    document.getElementById("mouseAlt").innerHTML = "Passe o Mouse"
 }
 
 
