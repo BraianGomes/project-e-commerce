@@ -51,27 +51,16 @@
             </nav>
         
     </menu>
-    </header>
-    
+    </header>      
+
     <div class="main">
         
+    <img id="row1" src="./images/headblue.png" alt="Head Phone Blue" onclick="changeImage('images/headbluelarge.png')">
 
-    <div onmouseover="mouseOver()" onmouseout="mouseOut()">
-        
-    <img id="mouseAlt" src="images/headblue.png" alt=""
-            onclick="changeImage()">
-        
-    </div>
+    <img id="row2" src="./images/headblack.png" alt="Head Phone Black" onclick="changeImage('images/headblacklarge.png')">
 
+    <img id="row3" src="./images/headwhite.png" alt="Head Phone White"   onclick="changeImage('./images/headwhitelarge.png')">
 
-           
-            
-       
-            <li id="row2"><img src="images/headblack.png"></li>
-            
- 
-            <li id="row3"><img src="images/headwhite.png"></li>
-            
     </div>
            
     <section>
@@ -83,25 +72,10 @@
         </div>
     </section>
 
-<script>
-        function changeSize() {
-            if (window.innerWidth >= 768) {
-            itens.style.display = 'block'
-        } else {
-            itens.style.display = 'none'
-        }  
-    }
-        function clickMenu() {
-            if (itens.style.display =='block'){
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
 
+        <img id="larges" src="images/headbluelarge.png" alt="">
 
-
-</script>
+    
 
 </body>
 </html>
