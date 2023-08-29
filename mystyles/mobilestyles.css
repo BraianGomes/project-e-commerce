@@ -132,7 +132,7 @@ div#container{
     width: 100%;
 }
 
-div.main > ul{
+div.main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,22 +144,15 @@ div.main > ul{
     gap: 3rem;
 }
 
-div.main > ul > div#heads > li > img{
-    width: 50px;
-    height: auto;
-    max-width: 100%;
-}
-div.main > ul > div#buds > li > img{
+
+#row1 > img,
+#row2 > img,
+#row3 > img{
     width: 50px;
     height: auto;
     max-width: 100%;
 }
 
-div.main > ul > div#micros > li > img{
-    width: 50px;
-    height: auto;
-    max-width: 100%;
-}
 
 #row1{
     display: inline-flex;
@@ -255,83 +248,3 @@ section > div.home > a:hover{
     color: var(--bg-color);
 }
 
-div#heads > p{
-    display:none;
- }
-
-div#heads:hover > p{
-    display: block;
-    color: white;
-    background-color:#34e8f87b;
-    width: 120px;
-}
-
-p#blue{
-    position: absolute;
-    text-align: center;
-    height: 70px;
-    width: 70px; 
-    bottom: 330px;
-    border-radius: 15px;
-}
-
-div#buds > p{
-    display:none;
- }
-
- div#buds:hover > p{
-    display: block;
-    color: white;
-    background-color:#ff758c87 ;
-    width: 120px;
-}
-
-p#pink{
-    position: absolute;
-    text-align: center;
-    height: 70px;
-    width: 70px; 
-    bottom: 210px;
-    border-radius: 15px;
-}
-
-div#micros > p{
-    display:none;
- }
-
- div#micros:hover > p{
-    display: block;
-    color: white;
-    background-color:#ffd16d84 ;
-    width: 120px;
-}
-
-p#yellow{
-    position: absolute;
-    text-align: center;
-    height: 70px;
-    width: 70px; 
-    bottom: 90px;
-    border-radius: 15px;
-}
-
-
-/*
-window.onload = function(){
-  var entidade = document.getElementById('imagem');
-
-  // Altere o número para a apliação/redução desejada
-  var fator_lupa = 6;
-
-  entidade.onmouseover = function () { this.style.width = (this.clientWidth * fator_lupa) + "px"; };
-
-  entidade.onmouseout = function () { this.style.width = (this.clientWidth / 2) + "px"; };
-}
-
-A variável fator_lupa aumenta e diminui a imagem em pixels.
-
-Para chamar a função basta atribuir um id a imagem desejada, dessa forma:
-
-<img id="imagem" src="imagem.png" align="center" />
-OBS: esse exemplo usa onmouseover, para adaptar ao seu caso, basta usar o OnClick.     
-*/

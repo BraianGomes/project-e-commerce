@@ -7,7 +7,7 @@
         margin: auto;
     }
 
-    div.main > ul{
+    div.main{
         display: flex;
         flex-direction: column;
         justify-content: center;
