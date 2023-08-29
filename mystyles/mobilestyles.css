@@ -68,13 +68,13 @@ i#logo{
 }
 
 i#burguer{
-    padding: 5px;
+    padding: 3px;
     text-align: center;
     font-size: 35px;
-    width: 100px;
+    width: 80px;
     color: var(--tex-color);
     border: 2px solid rgba(255, 255, 255, 0.795);
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -136,18 +136,16 @@ div#container{
 div.main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 65%;
+    top: 40%;
     left: 3%;
     transform: translateY(-50%);
     gap: 3rem;
 }
 
-#row1 > img,
-#row2 > img,
-#row3 > img{
+#row1,
+#row2,
+#row3{
     width: 50px;
     height: auto;
     max-width: 100%;
@@ -196,7 +194,7 @@ div.main{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    transition: all 0.7s ease;
+    transition: all .7s ease;
     cursor: pointer;
 }
 
@@ -204,7 +202,7 @@ div.main{
     transform: translateY(-8px);
 }
 
-section > div.home{
+section#home{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,29 +210,29 @@ section > div.home{
     align-content: center;
 }
 
-section > div.home > h2{
+section#home > h2{
     padding: 10px;
     margin-left: 30px;
     margin-top: 5px;
     font-size: 2em;
 }
 
-section > div.home > p{
-    color: #ffffff99;
+section#home > p{
+    color: lightgray;
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
     margin-top: 5px;
 }
 
-section > div.home > h3{
+section#home > h3{
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
-section > div.home > a{
+section#home > a{
     padding: 15px 70px;
     font-size: 16px;
     font-weight: 500;
@@ -242,7 +240,19 @@ section > div.home > a{
     color: var(--tex-color);
 }
 
-section > div.home > a:hover{
+section#home > a:hover{
     background: var(--tex-color);
     color: var(--bg-color);
+}
+
+img#back{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+section#cover{
+    display: flex;
+    text-align: center;
+    align-items: center;
 }

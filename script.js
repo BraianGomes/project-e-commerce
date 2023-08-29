@@ -13,46 +13,15 @@
         }
     }
 
-
-    function changeImage(){
-        var img = document.querySelector('#larges');
-        img.src = './images/headwhitelarge.png';
+    function clickblue(){
+        document.getElementById("back").src = "./images/headbluelarge.png";
     }
 
-    /*
-    function changeImage(){
-        let displayImage = document.getElementById('mouseAlt')
-        if (displayImage.src.match('./images/headblue.png')){
-            displayImage.src = './images/headbluelarge.png'
-        } else{
-            displayImage.src = './images/headblue.png'
-        }
+    function clickblack(){
+        document.getElementById("back").src = "./images/headblacklarge.png";
     }
 
-function changeImage(fileName){
-    let img = document.querySelector("#row3");
-    img.setAttribute("src", fileName);
-}    
-/////////////////////////////////////////////////////////////////
-function mouseOverBlue(){
-    document.getElementById("row1").src = "images/headbluelarge.png";
-}
-
-function mouseOutBlue(){
-    document.getElementById("row1").src = "images/headblue.png";
-}
-
-
-<img onmouseover="mouseOverBlue()" onmouseout="mouseOutBlue()" id="mouseAlt" src="images/headblue.png" alt="Head Phone Blue" onclick="changeImage()">
-
-
-
-function changeImage(){
-    let displayImage = document.getElementById('mouseAlt')
-    if (displayImage.src.match('./images/headblue.png')){
-        displayImage.src = './images/headbluelarge.png'
-    } else{
-        displayImage.src = './images/headblue.png'
+    function clickwhite(){
+        document.getElementById("back").src = "./images/headwhitelarge.png";
     }
-}
-*/
+
