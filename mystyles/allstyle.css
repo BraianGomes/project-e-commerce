@@ -65,4 +65,18 @@
         font-size: 4em;
     }
 
+    img#back{
+        width: 400px;
+        height: 400px;
     }
+    
+    section#cover{
+        display: flex;
+        justify-content: center;
+    }
+
+    div.main{
+        top: 55%;
+        left: 10%;
+    }
+}

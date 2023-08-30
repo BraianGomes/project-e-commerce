@@ -134,16 +134,13 @@ div#container{
 }
 
 img#back{
-    width: 85vw;
+    width: 400px;
     height: 400px;
 }
 
 section#cover{
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: first baseline;
-
+    justify-content: center;
 }
 
 div.main{
