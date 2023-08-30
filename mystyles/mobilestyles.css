@@ -133,22 +133,27 @@ div#container{
     width: 100%;
 }
 
+img#back{
+    width: 85vw;
+    height: 400px;
+}
+
+section#cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: first baseline;
+
+}
+
 div.main{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 3%;
     transform: translateY(-50%);
     gap: 3rem;
-}
-
-#row1,
-#row2,
-#row3{
-    width: 50px;
-    height: auto;
-    max-width: 100%;
 }
 
 #row1{
@@ -157,8 +162,8 @@ div.main{
     align-items: center;
     text-align: center;
     background: var(--main-color);
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     transition: all 0.7s ease;
     cursor: pointer;
@@ -174,8 +179,8 @@ div.main{
     align-items: center;
     text-align: center;
     background: #ff758d;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     transition: all 0.7s ease;
     cursor: pointer;
@@ -191,8 +196,8 @@ div.main{
     align-items: center;
     text-align: center;
     background: #ffd06d;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     transition: all .7s ease;
     cursor: pointer;
@@ -243,10 +248,4 @@ section#home > a{
 section#home > a:hover{
     background: var(--tex-color);
     color: var(--bg-color);
-}
-
-img#back{
-    width: 95vw;
-    height: 450px;
-    background-color: rgba(255, 255, 255, 0.586);
 }
