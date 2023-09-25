@@ -134,8 +134,9 @@ div#container{
 }
 
 img#back{
-    width: 400px;
-    height: 400px;
+    width: 330px;
+    height: 330px;
+    margin: 3em 0px 0px 4em;
 }
 
 section#cover{
